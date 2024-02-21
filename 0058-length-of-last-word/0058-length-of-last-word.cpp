@@ -15,7 +15,6 @@ public:
     int lengthOfLastWord(string s) {
         size_t first_not_space = s.find_first_not_of(' ');
         size_t last_not_space = s.find_last_not_of(' ');
-        size_t i = s.find('n');
         
         s = s.substr(first_not_space, last_not_space - first_not_space + 1);
         return split(s, ' ').size();
