@@ -9,9 +9,6 @@ public:
             tokens.push_back(token);
         }
         
-        for(int i=0;i<tokens.size();i++){
-            cout << " i : " << i << ' ' << tokens[i] << endl;
-        }
         return tokens[tokens.size()-1]; 
     }
     
