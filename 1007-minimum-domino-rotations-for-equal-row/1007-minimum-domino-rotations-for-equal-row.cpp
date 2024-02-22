@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minDominoRotations(vector<int>& tops, vector<int>& bottoms) {
-        // O ( 6 * 2 * N (2 * 10^4) * 2) -> O(N)
+        // O ( 6 * N (2 * 10^4)) -> O(N)
         
         int n = tops.size();
         int ans = 1e9;
