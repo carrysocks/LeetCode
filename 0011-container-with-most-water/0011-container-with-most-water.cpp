@@ -8,9 +8,7 @@ public:
         
         while(l < r){
             int s = (r - l) * min(height[l], height[r]);
-            if(mx < s){
-                mx = s;
-            }
+            mx = max(mx, s);
             
             if(height[l] <= height[r]) l++;
             else r--;
