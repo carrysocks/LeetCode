@@ -13,14 +13,10 @@ public:
                 int c = intervals[j+1][1];
                 if(a < b) break;
                 else if(a >= b && a < c){
-                    j++;
-                    a = c;
-                    r = c;
+                    a = c; r = c;
                 }
-                else{
-                    j++;
-                    r = a;
-                }
+                else r = a;
+                j++;
             }
 
             i=j;
