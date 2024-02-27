@@ -7,16 +7,18 @@ public:
             char c = path[i];
             if(c == '/') continue;
 
+            temp = "";
             while(i < path.size() && path[i] != '/'){
                 temp += path[i++];
             }
+
+            cout << "temp : " << temp << endl;
 
             if(temp == ".") continue;
             else if(temp == ".."){
                 if(!s.empty()) s.pop();
             }
             else s.push(temp);
-            temp = "";
         }
 
         while(!s.empty()){
